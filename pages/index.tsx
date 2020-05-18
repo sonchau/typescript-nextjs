@@ -5,6 +5,7 @@ import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
 import { GetStaticProps } from 'next'
+import CharacterCounter from '../components/characterCounter'
 
 export default function Home({
   allPostsData
@@ -42,6 +43,10 @@ export default function Home({
             </li>
           ))}
         </ul>
+      </section>
+      <section>
+        <p>character counter</p>
+        <CharacterCounter />
       </section>
     </Layout>
   )
